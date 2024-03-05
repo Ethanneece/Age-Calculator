@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+  <main>
+    <section class="inputSection">
+      <div class="inputColumn">
+        <h1 id="dayHeader" class="inputHeader">
+          Day
+        </h1>
+        <input id="dayInput" type="number" min="0" max="31" placeholder="DD">
+        <p class="error errorHidden" id="dayError">This field is required</p>
+      </div>
+
+      <div class="inputColumn">
+        <h1 id="monthHeader" class="inputHeader">
+          Month
+        </h1>
+        <input id="monthInput" type="number" min="1" max="12" placeholder="MM">
+        <p class="error errorHidden" id ="monthError">This field is required</p>
+      </div>
+
+      <div class="inputColumn">
+        <h1 id="yearHeader" class="inputHeader">
+          Year
+        </h1>
+        <input id="yearInput" placeholder="YYYY" min="1900" >
+        <p class="error errorHidden" id="yearError">This field is required</p>
+      </div>
+    </section>
+
+    <div class="buttonFlex">
+      <hr>
+      <button id="calculate" class="calculateAge">
+
+      </button>
+      <hr class="hiddenHr">
+    </div>
+
+    <section class="output">
+      <div class="outputContainer">
+        <h1 id="yearOutput" class="outputHeader">
+          --
+        </h1> 
+        <h2 class="outputTag">
+          years
+        </h2>
+      </div>
+      <div class="outputContainer">
+        <h1 id ="monthOutput" class="outputHeader">
+          --
+        </h1> 
+        <h2 class="outputTag">
+          months
+        </h2>
+      </div>
+      <div class="outputContainer">
+        <h1 id="dayOutput" class="outputHeader">
+          --
+        </h1> 
+        <h2 class="outputTag">
+          days
+        </h2>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
